@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
+import { Send } from 'lucide-react';
 
 import { Button } from './Button';
 
@@ -38,3 +39,29 @@ export const DisabledButton: Story = {
     disabled: true
   }
 };
+
+export const WithIcon: Story = {
+  args: {
+    variant: 'default',
+    size: 'icon',
+    children: (<Send />)
+  }
+};
+
+export const WithTextAndIcon: Story = {
+  args: {
+    variant: 'default',
+    size: 'default',
+    children: (<>Send<Send /></>)
+  }
+};
+
+export const WithIconAndText: Story = {
+  args: {
+    variant: 'default',
+    size: 'default',
+    children: (<><Send />Send</>)
+  }
+};
+
+
