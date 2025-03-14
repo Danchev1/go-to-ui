@@ -40,18 +40,17 @@ export const DisabledButton: Story = {
   }
 };
 
-export const WithIcon: Story = {
+export const IconButton: Story = {
   args: {
-    variant: 'default',
+    ...DefaultButton.args,
     size: 'icon',
     children: <Send />
   }
 };
 
-export const WithTextAndIcon: Story = {
+export const WithIconRight: Story = {
   args: {
-    variant: 'default',
-    size: 'default',
+    ...DefaultButton.args,
     children: (
       <>
         Send
@@ -61,10 +60,9 @@ export const WithTextAndIcon: Story = {
   }
 };
 
-export const WithIconAndText: Story = {
+export const WithIconLeft: Story = {
   args: {
-    variant: 'default',
-    size: 'default',
+    ...DefaultButton.args,
     children: (
       <>
         <Send />
