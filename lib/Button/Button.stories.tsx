@@ -44,7 +44,7 @@ export const WithIcon: Story = {
   args: {
     variant: 'default',
     size: 'icon',
-    children: (<Send />)
+    children: <Send />
   }
 };
 
@@ -52,7 +52,12 @@ export const WithTextAndIcon: Story = {
   args: {
     variant: 'default',
     size: 'default',
-    children: (<>Send<Send /></>)
+    children: (
+      <>
+        Send
+        <Send />
+      </>
+    )
   }
 };
 
@@ -60,8 +65,11 @@ export const WithIconAndText: Story = {
   args: {
     variant: 'default',
     size: 'default',
-    children: (<><Send />Send</>)
+    children: (
+      <>
+        <Send />
+        Send
+      </>
+    )
   }
 };
-
-
