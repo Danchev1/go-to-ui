@@ -6,8 +6,7 @@ const preview: Preview = {
   tags: ['autodocs'],
   parameters: {
     viewport: {
-      viewports: INITIAL_VIEWPORTS,
-      defaultViewport: 'responsive'
+      viewports: INITIAL_VIEWPORTS
     },
     actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {

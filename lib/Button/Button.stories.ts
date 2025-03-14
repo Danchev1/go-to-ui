@@ -6,12 +6,6 @@ const meta: Meta<typeof Button> = {
   title: 'Example/Button',
   component: Button,
   parameters: {
-    viewport: {
-      defaultViewport: 'responsive',
-    },
-    viewportTool: {
-      defaultActive: true,
-    },
     layout: 'centered'
   },
   argTypes: {
@@ -34,7 +28,7 @@ export const DefaultButton: Story = {
   args: {
     variant: 'default',
     size: 'default',
-    children: 'Click Me!'
+    children: 'Submit'
   }
 };
 
