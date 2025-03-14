@@ -6,14 +6,14 @@ const config: StorybookConfig = {
   addons: ['@storybook/addon-essentials', '@storybook/addon-actions'],
   framework: {
     name: '@storybook/react-vite',
-    options: {},
+    options: {}
   },
   core: {
-    builder: '@storybook/builder-vite',
+    builder: '@storybook/builder-vite'
   },
   viteFinal: async (config) => ({
     ...config,
-    plugins: await withoutVitePlugins(config.plugins, ['vite:dts']), // skip dts plugin
-  }),
+    plugins: await withoutVitePlugins(config.plugins, ['vite:dts']) // skip dts plugin
+  })
 };
 export default config;

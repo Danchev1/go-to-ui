@@ -11,7 +11,7 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-    dts({ rollupTypes: true }), // Output .d.ts files
+    dts({ rollupTypes: true }) // Output .d.ts files
   ],
   build: {
     target: 'esnext',
@@ -20,19 +20,19 @@ export default defineConfig({
       entry: resolve(__dirname, join('lib', 'index.ts')),
       fileName: 'index',
       cssFileName: 'style',
-      formats: ['es', 'cjs'],
+      formats: ['es', 'cjs']
     },
     rollupOptions: {
       // Exclude peer dependencies from the bundle to reduce bundle size
-      external: ['react/jsx-runtime', ...Object.keys(peerDependencies)],
-    },
+      external: ['react/jsx-runtime', ...Object.keys(peerDependencies)]
+    }
   },
   test: {
     environment: 'jsdom',
     setupFiles: './lib/test/setup.ts',
     coverage: {
       all: false,
-      enabled: true,
-    },
-  },
+      enabled: true
+    }
+  }
 });

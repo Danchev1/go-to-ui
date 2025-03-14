@@ -2,29 +2,6 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 import { Button } from './Button';
 
-/*
-*
-* const meta = {
-  title: 'Components/Button',
-  component: Button,
-  parameters: {
-    layout: 'centered',
-  },
-  argTypes: {
-    color: {
-      options: ['primary', 'success', 'info', 'warning', 'error'],
-      control: { type: 'select' },
-    },
-    size: {
-      options: ['small', 'medium', 'large'],
-      control: { type: 'select' },
-    },
-  },
-} satisfies Meta<typeof Button>;
-*
-*
-* */
-
 const meta: Meta<typeof Button> = {
   title: 'Example/Button',
   component: Button,
