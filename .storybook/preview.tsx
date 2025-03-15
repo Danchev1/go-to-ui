@@ -1,9 +1,21 @@
 import type { Preview } from '@storybook/react';
+import { Title, Subtitle, Description, Primary, Controls, Stories } from '@storybook/blocks';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
-import '../lib/global.css';
 import { withThemeByClassName } from '@storybook/addon-themes';
+import '../lib/global.css';
 
-const theme = withThemeByClassName({
+const documentationTemplate = () => (
+  <>
+    <Title />
+    <Subtitle />
+    <Description />
+    <Primary />
+    <Controls />
+    <Stories />
+  </>
+);
+
+const lightDarkTheme = withThemeByClassName({
   themes: {
     light: 'light',
     dark: 'dark'
@@ -13,8 +25,11 @@ const theme = withThemeByClassName({
 
 const preview: Preview = {
   tags: ['autodocs'],
-  decorators: [theme],
+  decorators: [lightDarkTheme],
   parameters: {
+    docs: {
+      page: documentationTemplate
+    },
     viewport: {
       viewports: INITIAL_VIEWPORTS
     },
