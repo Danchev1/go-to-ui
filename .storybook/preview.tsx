@@ -30,6 +30,7 @@ const preview: Preview = {
     docs: {
       page: documentationTemplate
     },
+    layout: 'centered',
     viewport: {
       viewports: INITIAL_VIEWPORTS
     },

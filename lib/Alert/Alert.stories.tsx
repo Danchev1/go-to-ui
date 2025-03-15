@@ -2,12 +2,9 @@ import { Alert, AlertDescription, AlertTitle } from './Alert';
 import type { Meta, StoryObj } from '@storybook/react';
 import { Terminal } from 'lucide-react';
 
-const meta = {
+const meta: Meta<typeof Alert> = {
   title: 'Design System/Atoms/Alert',
   component: Alert,
-  parameters: {
-    layout: 'centered'
-  },
   argTypes: {
     variant: {
       options: ['default', 'destructive'],

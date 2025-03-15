@@ -6,9 +6,6 @@ import { Button } from './Button';
 const meta: Meta<typeof Button> = {
   title: 'Design System/Atoms/Button',
   component: Button,
-  parameters: {
-    layout: 'centered'
-  },
   argTypes: {
     variant: {
       options: ['default', 'destructive', 'outline', 'secondary', 'ghost', 'link'],
