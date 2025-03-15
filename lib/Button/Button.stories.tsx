@@ -29,14 +29,8 @@ export const DefaultButton: Story = {
   args: {
     variant: 'default',
     size: 'default',
+    disabled: false,
     children: 'Submit'
-  }
-};
-
-export const DisabledButton: Story = {
-  args: {
-    ...DefaultButton.args,
-    disabled: true
   }
 };
 
